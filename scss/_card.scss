@@ -1,0 +1,56 @@
+@import 'variables';
+
+.players__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 10px;
+  padding: 5px;
+
+  .card {
+    flex: 0 1 200px;
+    padding: 10px;
+    border: 1px solid $neutral200;
+    border-radius: 2rem;
+    position: relative;
+
+    .like {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      background: $neutral100;
+      padding: 5px;
+      border-radius: 5px;
+      filter: grayscale(1);
+    }
+
+    img {
+      border-radius: 1rem;
+      max-width: 25rem;
+    }
+
+    .info {
+      margin-top: 1rem;
+
+      p {
+        color: $neutral400;
+        margin-top: 0.5rem;
+        max-height: 6rem;
+        overflow: hidden;
+      }
+
+      button {
+        display: flex;
+        margin-top: 1rem;
+        width: fit-content;
+        padding: 10px 20px;
+        border-radius: 5rem;
+        border: none;
+        background: $pastelGreen600;
+        color: $neutral100;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
