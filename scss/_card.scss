@@ -50,6 +50,7 @@
         background: $pastelGreen600;
         color: $neutral100;
         font-size: 1.6rem;
+        cursor: pointer;
       }
     }
   }
@@ -73,12 +74,28 @@
       border-radius: 100%;
     }
 
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      strong {
+        color: #fff;
+        background: $pastelGreen600;
+        border-radius: 5rem;
+        padding: 0.2rem 1rem;
+        display: inline-flex;
+      }
+    }
+
     button {
       position: absolute;
       padding: 0.5rem 2rem;
       border-radius: 5rem;
       border: none;
       color: $neutral400;
+      cursor: pointer;
     }
   }
 }

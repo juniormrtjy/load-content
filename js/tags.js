@@ -54,7 +54,7 @@ export const completePlayerInformation = (
 
   img.src = playerImg
   name.textContent = playerName
-  team.textContent = playerTeam
+  team.innerHTML = '<strong>Time:</strong> ' + playerTeam
   ul.append(team)
   header.append(img)
   header.append(name)
