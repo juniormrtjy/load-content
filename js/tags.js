@@ -50,7 +50,7 @@ export const completePlayerInformation = (
   const team = document.createElement('li')
   const back = document.createElement('button')
   back.addEventListener('click', basicPlayerCard)
-  back.textContent = 'Voltar'
+  back.textContent = '<'
 
   img.src = playerImg
   name.textContent = playerName

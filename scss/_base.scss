@@ -11,4 +11,14 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Mulish', sans-serif;
+  padding-inline: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  object-fit: cover;
 }
