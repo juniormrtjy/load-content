@@ -40,8 +40,19 @@ export const basicPlayerCard = () => {
 export const completePlayerInformation = (
   playerImg,
   playerName,
-  playerTeam
+  playerTeam,
+  playerPos,
+  playerAge,
+  playerNac,
+  playerAvg,
+  playerHeight,
+  playerWeight,
+  playerSalario,
+  playerDesc
 ) => {
+  // SECTION BOX
+  const content = document.createElement('section')
+  content.setAttribute('class', 'player__info-box')
   // header
   const header = document.createElement('header')
   const img = document.createElement('img')
@@ -60,5 +71,39 @@ export const completePlayerInformation = (
   header.append(name)
   header.append(ul)
   header.append(back)
-  return header
+  // add header on content
+  content.append(header)
+
+  // box with more information
+  const playerInfo = document.createElement('article')
+  playerInfo.setAttribute('class', 'player__info')
+  const plPos = document.createElement('p')
+  const plAge = document.createElement('p')
+  const plNac = document.createElement('p')
+  const plAvg = document.createElement('p')
+  const plHeight = document.createElement('p')
+  const plWeight = document.createElement('p')
+  const plSalario = document.createElement('p')
+  const plDesc = document.createElement('p')
+
+  plPos.innerHTML = `<strong>Posição:</strong> ${playerPos}`
+  plAge.innerHTML = `<strong>Idade:</strong> ${playerAge}`
+  plNac.innerHTML = `<strong>Nascimento:</strong> ${playerNac}`
+  plAvg.innerHTML = `<strong>Média de pontos:</strong> ${playerAvg}`
+  plHeight.innerHTML = `<strong>Altura:</strong> ${playerHeight}`
+  plWeight.innerHTML = `<strong>Peso:</strong> ${playerWeight}`
+  plSalario.innerHTML = `<strong>Salário Anual:</strong> ${playerSalario}`
+  plDesc.innerHTML = `<strong>Descrição:</strong> ${playerDesc}`
+
+  playerInfo.append(plPos)
+  playerInfo.append(plAge)
+  playerInfo.append(plNac)
+  playerInfo.append(plAvg)
+  playerInfo.append(plHeight)
+  playerInfo.append(plWeight)
+  playerInfo.append(plSalario)
+  playerInfo.append(plDesc)
+  content.append(playerInfo)
+
+  return content
 }

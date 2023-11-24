@@ -9,7 +9,15 @@ export const loadContent = e => {
   const playerInfo = completePlayerInformation(
     jogadoresBasquete[getIndex(el)].img,
     jogadoresBasquete[getIndex(el)].nome,
-    jogadoresBasquete[getIndex(el)].timeAtual
+    jogadoresBasquete[getIndex(el)].timeAtual,
+    jogadoresBasquete[getIndex(el)].posicao,
+    jogadoresBasquete[getIndex(el)].idade,
+    jogadoresBasquete[getIndex(el)].nacionalidade,
+    jogadoresBasquete[getIndex(el)].mediaPontosTemporada2017,
+    jogadoresBasquete[getIndex(el)].altura,
+    jogadoresBasquete[getIndex(el)].peso,
+    jogadoresBasquete[getIndex(el)].salarioAnual,
+    jogadoresBasquete[getIndex(el)].descricao
   )
   section.innerHTML = ''
   section.append(playerInfo)
